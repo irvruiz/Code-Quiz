@@ -10,13 +10,9 @@ body {
     background-color: whitesmoke (var(--hue), 100%, 20%);
 
 }
-header {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 1rem;
-    font-size: 1rem;
-}
+
 .h1 {
+    padding: 200px;
     text-align:end;
     height: 100;
     margin-right: 10px;
@@ -51,4 +47,19 @@ body.wrong {
     color: black;
     outline: none;
     cursor: pointer;
+}
+.btn:hover {
+    border-color: cadetblue;
+}
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.cotrols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
