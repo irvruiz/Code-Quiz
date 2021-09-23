@@ -72,9 +72,22 @@ body {
     margin: 20px 0;
 }
 .btn:hover {
+    cursor: pointer;
     border-color: cadetblue;
+    transition: 150ms;
+    transform: scale(1.0);
 }
-.start-btn,
+.btn[disabled]:hover {
+    cursor:not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+#highscore-btn {
+    background: linear-gradient(90deg);
+}
+#higscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 grey;
+}
 .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
