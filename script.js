@@ -15,29 +15,34 @@ let questions = [
         choice1: "the code used to structure a web page and it's content"
         choice2: "a programming language that adds interactivity to a website"
         choice3: "the code that styles web content"
+        answer: 2,
     }
     {
         question: "which is used to separate JavaScript statements?"
         choice1: "period"
         choice2: "semicolon"
         choice3: "colon"
+        answer: 2,
     }
     {
         question: "what is JavaScript abbreviated to?"
         choice1: "JS"
         choice2: "J"
         choice3: "JST"
+        answer: 1,
     }
     {
         question: "which HTML element is used to embed JavaScript code?"
         choice1: "<a>"
         choice2: "<link>"
         choice3: "<script>"
+        answer: 3,
     }
     {
         question: "which is a container thay stores a value?"
         choice1: "variable"
         choice2: "function"
         choice3: "string"
+        answer: 1,
     }
 ]
