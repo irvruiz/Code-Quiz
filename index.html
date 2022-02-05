@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div id="Home" class="flex-column flex-center">
-            <h1>Are you ready?</h1>
-            <a href="/quiz.css"></a>
-            <a href="/quiz.html" class="btn">Play</a>
-            <a href="/highscores.html" id="highscores-btn" class="btn">View High Scores</a>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Coding Practice</li>
+          <li>
+            Time:
+            <span id="countdown"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Code Quiz</h1>
+      <section id="mainPage">
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Incorrect answers will penalize your
+          scoretime by ten seconds.
+        </p>
+        <button id="startQuizButton">Start Quiz</button>
+      </section>
+      <section id="questionContainer">
+        <div id="question1">
+          <h2>
+            A very useful tool used during development and debugging for
+            printing content to the debugger is:
+          </h2>
+          <ul>
+            <button id="option1A">Console Log</button>
+            <button id="option1B">JavaScript</button>
+            <button id="option1C">For Loops</button>
+            <button id="option1D">Terminal/Bash</button>
+          </ul>
         </div>
-    </div>
-    
-        <div class="controls">
-            <button id="start-btn" class="start-btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
+        <div id="question2">
+          <h2>
+            The condition in an if/else statement is enclosed within_____.
+          </h2>
+          <ul>
+            <button id="option2A">Quotes</button>
+            <button id="option2B">Curly Brackets</button>
+            <button id="option2C">Parentheses</button>
+            <button id="option2D">Square Brackets</button>
+          </ul>
         </div>
-
-        <div class="score">
-            <span id="right-answers"></span>
+        <div id="question3">
+          <h2>
+            String values must be enclosed within _____ when being assigned to
+            variables.
+          </h2>
+          <ul>
+            <button id="option3A">Commas</button>
+            <button id="option3B">Quotes</button>
+            <button id="option3C">Parentheses</button>
+            <button id="option3D">Curly Brackets</button>
+          </ul>
         </div>
-    </div>
+        <div id="question4">
+          <h2>Arrays in JavaScript can be used to store ______.</h2>
+          <ul>
+            <button id="option4A">Numbers and Strings</button>
+            <button id="option4B">Other Arrays</button>
+            <button id="option4C">Booleans</button>
+            <button id="option4D">All of the Above</button>
+          </ul>
+        </div>
+        <!-- Added p tag so that JavaScript file can dynamically modify feedback depending on whether the answer was correct or not -->
+        <p id="answerFeedback"></p>
+      </section>
+      <section id="finalScore">
+        <h2>All done!</h2>
+        <form action="assets/js/script.js">
+          <label for="initials">Enter Initials:</label>
+          <input type="text" id="initials" name:="initials"/>
+        </form>
+        <button id="submitButton">Submit</button>
+      </section>
+      <section id="highscores">
+        <ul>
+          <button id="goBackButton">Go Back</button>
+          <button id="clearHighscores">Clear Highscores</button>
+        </ul>
+        <!-- displays highscores when "Submit" button is clicked -->
+        <h2>Highscores</h2>
+        <div id="highscoreDiv"></div>
+      </section>
+    </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
